@@ -17,6 +17,7 @@ const (
 const (
 	ApNortheast1RegionID = "ap-northeast-1" // Asia Pacific (Tokyo).
 	ApNortheast2RegionID = "ap-northeast-2" // Asia Pacific (Seoul).
+	ApNortheast3RegionID = "ap-northeast-3" // Asia Pacific (Osaka)
 	ApSouth1RegionID     = "ap-south-1"     // Asia Pacific (Mumbai).
 	ApSoutheast1RegionID = "ap-southeast-1" // Asia Pacific (Singapore).
 	ApSoutheast2RegionID = "ap-southeast-2" // Asia Pacific (Sydney).
@@ -220,6 +221,9 @@ var awsPartition = partition{
 		"ap-northeast-2": region{
 			Description: "Asia Pacific (Seoul)",
 		},
+		"ap-northeast-3": region{
+			Description: "Asia Pacific (Osaka)",
+		},
 		"ap-south-1": region{
 			Description: "Asia Pacific (Mumbai)",
 		},
@@ -303,6 +307,7 @@ var awsPartition = partition{
 			Endpoints: endpoints{
 				"ap-northeast-1": endpoint{},
 				"ap-northeast-2": endpoint{},
+				"ap-northeast-3": endpoint{},
 				"ap-south-1":     endpoint{},
 				"ap-southeast-1": endpoint{},
 				"ap-southeast-2": endpoint{},
@@ -480,6 +485,7 @@ var awsPartition = partition{
 			Endpoints: endpoints{
 				"ap-northeast-1": endpoint{},
 				"ap-northeast-2": endpoint{},
+				"ap-northeast-3": endpoint{},
 				"ap-south-1":     endpoint{},
 				"ap-southeast-1": endpoint{},
 				"ap-southeast-2": endpoint{},
